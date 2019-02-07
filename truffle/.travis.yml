@@ -2,7 +2,6 @@ language: node_js
   - "9"
 
 before_script:
-  - cd truffle \
   - npm install -g ganache-cli
   - npm install -g truffle@5.0.0
 
