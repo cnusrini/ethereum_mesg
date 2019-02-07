@@ -10,5 +10,5 @@ before_script:
 script:
   - ganache-cli -p 8545 > /dev/null &
   - sleep 5
-  - truffle compile
-  - truffle migrate --network ganache --reset
+  - cd ./truffle/ truffle compile
+  - cd ./truffle/ truffle migrate --network ganache --reset
